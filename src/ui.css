@@ -109,7 +109,7 @@
 .ui-flag_t{
     display: inline-block;
     padding: 1px 3px; padding: 1px 2px\9; border-radius: 3px;
-    font-family: sans-serif; font-size: 12px; font-size: 8px\9;
+    font-family: Arial, sans-serif; font-size: 12px; font-size: 8px\9;
 
     color: #fff; background: #F66540;
 
@@ -150,6 +150,8 @@
     box-shadow: 1px 1px 0 0 rgba(0,0,0,.1);
     font-weight: bold;
     vertical-align: bottom;
+
+    cursor: pointer;
 
     min-width:40px; width: auto!important; width: 40px; height: 23px; line-height: 23px;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -265,6 +267,8 @@
     width: 230px;
     box-shadow: 1px 1px 3px 0 rgba(0,0,0,.1);
     display: inline-block;
+    *display: inline;
+    zoom: 1;
 }
 
 .ui-bubble .ui-bubble_in,

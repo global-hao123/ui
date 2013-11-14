@@ -106,30 +106,46 @@ i{ width: 16px; height: 16px; display: inline-block;}
     width: 200px;
 }
 
+.l-ff{ _float: left;}
+
 .sticky{
     position: fixed;
     top: 0;
     z-index: 1;
 }
 
+.demo-nav li{
+
+}
+
 .demo-nav a{
     display: block;
     padding-left: 15px;
     position: relative;
+    zoom: 1;
+    cursor: pointer;
 }
 
 .demo-nav span{
     position: relative;
+    zoom: 1;
 }
 
 .demo-nav .ui-btn{
     vertical-align: middle;
 }
 
+.demo-nav .ui-flag{
+    right: -40px;
+}
+
 .demo-nav a:hover{ background: #e8eaeb;}
 .demo-nav a:active{ background: #00ac73;}
 
-.demo-info{ font-size: 13px; background: #fff; border-bottom: 1px solid #eee; color: #666;}
+.demo-info{ font-size: 13px; background: #fff; border-bottom: 1px solid #eee; color: #666;
+
+    overflow: hidden;
+}
 
 .demo-info em{}
 .demo-info label{ border-radius: 3px; background: #aaa; color: #fff; padding: 2px 5px; margin-right: 5px;
@@ -273,5 +289,5 @@ i{ width: 16px; height: 16px; display: inline-block;}
     position: absolute;
     /*position: relative;*/
     top: 110px;
+    left: 0;
 }
-

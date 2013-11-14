@@ -29,7 +29,7 @@
 <div class="l-wrap cf">
     <div class="l-fl s-mvm s-mrm demo-nav_wrap">
         <ul id="demoNav" class="demo-box demo-nav">
-            <div class="demo-box_hd">Navigation</div>
+            <h4 class="demo-box_hd">Navigation</h4>
             <li><a href="#arrow"><span>arrow&nbsp;&nbsp;<b class="ui-arrow ui-arrow-r ui-arrow-av"></b></span></a></li>
             <li><a href="#flag"><span>flag<em class="ui-flag ui-flag--blue">
                     <b class="ui-arrow ui-arrow-b"></b>
@@ -51,16 +51,14 @@
             <h4 class="demo-box_hd">Arrow</h4>
             <dl class="s-pam demo-info">
                 <dt><label class="master">.ui-arrow</label><span>Arrow</span></dt>
-                <dd><label>.ui-arrow-t</label><span>top | Arrow Up</span>
-                </dd>
+                <dd><label>.ui-arrow-t</label><span>top | Arrow Up</span></dd>
                 <dd><label>.ui-arrow-r</label><span>right | Arrow Right</span></dd>
-                <dd><label>.ui-arrow-b</label><span>bottom | Arrow down</dd>
+                <dd><label>.ui-arrow-b</label><span>bottom | Arrow down</span></dd>
                 <dd><label>.ui-arrow-l</label><span>left | Arrow Left</span></dd>
                 <dd><label>.ui-arrow-aa</label><span>align all | Align Centers</span></dd>
                 <dd><label>.ui-arrow-av</label><span>align vertical | Align Vertical Centers</span></dd>
                 <dd><label>.ui-arrow-ah</label><span>align horizontal | Align Horizontal Centers</span></dd>
-
-                <div class="ui-bubble ui-bubble-b" style="left:50%; bottom: 5px;">
+                <div class="ui-bubble ui-bubble-b" style="left:50%; bottom: 5px; display:none\9;">
                     <b class="ui-arrow ui-bubble_out"></b>
                     <b class="ui-arrow ui-bubble_in"></b>
                     <p class="ui-bubble_t">
@@ -114,7 +112,7 @@
                 <dd><label>.ui-flag_t</label><span>text | Inner Text</span>
                 </dd>
                 <dd><label class="fork">.ui-flag--green</label><span>green | Green Background</span></dd>
-                <dd><label class="fork">.ui-flag--blue</label><span>blue | Blue Background</dd>
+                <dd><label class="fork">.ui-flag--blue</label><span>blue | Blue Background</span></dd>
             </dl>
             <div class="demo-play">
                 <p class="s-mtl">Simple:</p>
@@ -223,7 +221,7 @@
                     <a href="#" class="ui-btn ui-btn--gray" onclick="return false" hidefocus="true">button</a>
                 </div>
 
-                <div class="ui-btn_bar ui-btn_bar-r" style="background: #eee;">
+                <div class="s-mtm ui-btn_bar ui-btn_bar-r" style="background: #eee;">
                     <a href="#" class="ui-btn" onclick="return false" hidefocus="true">button</a>
                     <a href="#" class="ui-btn ui-btn--gray" onclick="return false" hidefocus="true">button</a>
                 </div>
@@ -234,14 +232,13 @@
             <h4 class="demo-box_hd">Bubble</h4>
             <dl class="s-pam demo-info">
                 <dt><label class="master">.ui-bubble</label><span>Bubble</span></dt>
-                <dd><label>.ui-bubble-t</label><span>top | With Arrow Up</dd>
+                <dd><label>.ui-bubble-t</label><span>top | With Arrow Up</span></dd>
                 <dd><label>.ui-bubble-r</label><span>right | With Arrow Right</span></dd>
                 <dd><label>.ui-bubble-b</label><span>bottom | With Arrow Down</span></dd>
                 <dd><label>.ui-bubble-l</label><span>left | With Arrow Left</span></dd>
                 <dd><label>.ui-bubble-s</label><span>smaller | Smaller size</span></dd>
                 <dd><label>.ui-bubble-hover</label><span>hover | Control visibility by hover, using on parent</span></dd>
-                <dd><label>.ui-bubble_in</label><span>in-arrow | Arrow of Inner</span>
-                </dd>
+                <dd><label>.ui-bubble_in</label><span>in-arrow | Arrow of Inner</span></dd>
                 <dd><label>.ui-bubble_out</label><span>out-arrow | Arrow of Outer</span></dd>
                 <dd><label>.ui-bubble_more</label><span>more-link | Internal more link</span></dd>
                 <dd><label>.ui-bubble_close</label><span>close-button | Internal close button</span></dd>
@@ -275,10 +272,12 @@
 
                 <p class="s-mtl">On logo:</p>
                 <div class="demo-bubble--logo">
-                    <a href="#">
-                        <img src="img/luckylogo.gif">
-                    </a>
-                    <div class="ui-bubble ui-bubble-t" style="position: relative; top: 7px;">
+                    <div>
+                        <a href="#">
+                            <img src="img/luckylogo.gif">
+                        </a>
+                    </div>
+                    <div class="ui-bubble ui-bubble-t" style="position: relative; top: 7px; left:0;">
                         <b class="ui-arrow ui-bubble_out"></b>
                         <b class="ui-arrow ui-bubble_in"></b>
                         <a href="#" class="ui-bubble_close" onclick="return false" hidefocus="true">×</a>
@@ -294,7 +293,7 @@
                 <p class="s-mtl">On Magicbox:</p>
                 <ul class="demo-bubble--magicbox">
                     <li>
-                        <div class="ui-bubble ui-bubble-b" style="top: -90px;">
+                        <div class="ui-bubble ui-bubble-b" style="top: -90px; left:0;">
                             <b class="ui-arrow ui-bubble_out"></b>
                             <b class="ui-arrow ui-bubble_in"></b>
                             <a href="#" class="ui-bubble_close" onclick="return false" hidefocus="true">×</a>
@@ -331,11 +330,13 @@
                         </div>
                         <i class="i-nav-speedtest"></i>
                     </li>
-                    <div class="ui-bubble ui-bubble-l ui-bubble-s" style="top: 20px; margin-left: 10px;">
-                        <b class="ui-arrow ui-bubble_out" style="margin-top:-3px;"></b>
-                        <b class="ui-arrow ui-bubble_in" style="margin-top:-3px;"></b>
-                        <p class="ui-bubble_t">Hover me!</p>
-                    </div>
+                    <li>
+                        <div class="ui-bubble ui-bubble-l ui-bubble-s" style="top: 20px; margin-left: 10px;">
+                            <b class="ui-arrow ui-bubble_out" style="margin-top:-4px;"></b>
+                            <b class="ui-arrow ui-bubble_in" style="margin-top:-4px;"></b>
+                            <p class="ui-bubble_t">Hover me!</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -353,7 +354,13 @@
 <script>
 !function(demos, delay) {
     if(!demos || !demos.length) return;
-    ;[].slice.call(demos).forEach(function (demo) {
+    try{
+        demos = [].slice.call(demos);
+    }
+    catch(e){
+        return;
+    }
+    demos.forEach(function(demo) {
         CodeMirror(demo.parentNode, {
             value: demo.innerHTML.replace(/^(\r\n|\s)*|(\r\n|\s)*$/g, "").replace(/^\s{16}/mg, "")
             , mode:  "text/html"
@@ -368,7 +375,7 @@
     });
 }(document.querySelectorAll && document.querySelectorAll(".demo-play"));
 
-!function(DOC, nav, rAF, top, scrolling) {
+document.addEventListener && function(DOC, nav, rAF, top, scrolling) {
     top = nav.offsetTop;
     DOC.addEventListener("scroll", function(e) {
         scrolling = 1;
