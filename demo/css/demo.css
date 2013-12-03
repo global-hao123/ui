@@ -82,6 +82,7 @@ i{ width: 16px; height: 16px; display: inline-block;}
     background: #fcfdff;
     border: 1px solid #d7ddde;
     line-height: 25px;
+    overflow: hidden;
 }
 
 .demo-box_hd{
