@@ -1,34 +1,26 @@
 {
   "name": "ui",
-  "description": "Visual specification & Common ui library",
   "version": "0.1.0",
-  "author": "yuji",
+  "description": "Visual specification & Common ui library",
   "repository": {
     "type": "http",
     "url": "http://gitlab.pro/common-ui/ui.git"
   },
-  "engines": {
-    "node": ">= 0.8.0"
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-changed": "~0.3.0",
+    "gulp-wrap": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-serve": "*",
+    "gulp-uglify": "*",
+    "gulp-rename": "*",
+    "gulp-livereload": "~1.2.0",
+    "gulp-notify": "~1.2.4",
+    "hbsfy": "~1.3.2",
+    "vinyl-source-stream": "*"
   },
   "dependencies": {
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-connect": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-imagine": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-open": "*",
-    "grunt-svgmin": "*",
-    "grunt-concurrent": "*",
-    "grunt-shell": "*"
-  },
-  "scripts": {
-    "release": "npm run hint & npm run test",
-    "hint": "",
-    "build": "grunt",
-    "test": "tap test/*.js"
+    
   }
 }
