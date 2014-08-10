@@ -1,3 +1,3 @@
 # Visual specification & Common ui library
 
-see: [http://ui.i18n.pro](http://ui.i18n.pro)
+see: [http://global-hao123.github.io/ui](http://global-hao123.github.io/ui)
